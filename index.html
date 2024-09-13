@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Budget Planner</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+        <div class="section">
+            <h2>Income</h2>
+            <div class="input-group">
+                <label for="income-description">Description</label>
+                <input type="text" id="income-description" placeholder="e.g. Salary">
+            </div>
+            <div class="input-group">
+                <label for="income-amount">Amount (KES)</label>
+                <input type="number" id="income-amount" placeholder="e.g. 100000">
+            </div>
+            <div class="button-group">
+                <button onclick="addIncome()">Add Income</button>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Expenses</h2>
+            <div class="input-group">
+                <label for="expense-description">Description</label>
+                <input type="text" id="expense-description" placeholder="e.g. Rent">
+            </div>
+            <div class="input-group">
+                <label for="expense-category">Category</label>
+                <select id="expense-category">
+                    <option value="Housing">Housing</option>
+                    <option value="Food">Food</option>
+                    <option value="Transportation">Transportation</option>
+                    <option value="Entertainment">Entertainment</option>
+                    <option value="Others">Others</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="expense-amount">Amount (KES)</label>
+                <input type="number" id="expense-amount" placeholder="e.g. 50000">
+            </div>
+            <div class="button-group">
+                <button onclick="addExpense()">Add Expense</button>
+            </div>
+        </div>
+        <div class="table-container">
+            <h2>Transaction History</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Description</th>
+                        <th>Category</th>
+                        <th>Amount (KES)</th>
+                        <th>Type</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="transaction-history">
+                    <!-- Transactions will appear here -->
+                </tbody>
+            </table>
+        </div>
+        <div class="summary">
+    <h2>Budget Summary</h2>
+    <p>Total Income: KES<span id="total-income">0</span></p>
+    <p>Total Expenses: ₦<span id="total-expenses">0</span></p>
+    <p>Balance: KES<span id="balance">0</span></p>
+</div>
+<div class="clear-button-group">
+    <button onclick="clearAll()">Clear All</button>
+</div>
+</body>
+</html>
