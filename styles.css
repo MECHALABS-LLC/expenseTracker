@@ -51,3 +51,18 @@ h2 {
     box-sizing: border-box;
     font-size: 16px;
 }
+.button-group button,
+.clear-button-group button {
+    background-color: #6f2332;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button-group button:hover,
+.clear-button-group button:hover {
+    background-color: #913149;
+}
