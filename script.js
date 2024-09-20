@@ -69,3 +69,13 @@ function clearInputs() {
     amountInput.value = '';
     categoryInput.value = 'Expense';
 }
+
+function showNotification(message) {
+    const notification = document.getElementById('notification');
+    notification.textContent = message;
+    notification.classList.remove('hidden');
+
+    setTimeout(function() {
+        notification.classList.add('hidden');
+    }, 2000); // Notification will disappear after 2 seconds
+}
