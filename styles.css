@@ -66,3 +66,40 @@ h2 {
 .clear-button-group button:hover {
     background-color: #913149;
 }
+.table-container {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #6f2332;
+    color: white;
+}
+
+td {
+    color: #333;
+}
+
+td button {
+    background-color: #6f2332;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+td button:hover {
+    background-color: #913149;
+}
